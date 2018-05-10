@@ -3,23 +3,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
   $.fancybox.defaults.animationEffect = 'zoom-in-out';
 
+  var handleScrollHomepage = window.util.debounce(function (event) {
+    if (window.pageYOffset > 0) {
+      $('.main-header').addClass('main-header--filled');
+    } else {
+      $('.main-header').removeClass('main-header--filled');
+    }
+  }, 100);
+
   if ($('.homepage').length) {
     $('.main-header').removeClass('main-header--filled');
 
-    $(window).on('scroll', function(event) {
-      if (window.pageYOffset > 0) {
-        $('.main-header').addClass('main-header--filled');
-      } else {
-        $('.main-header').removeClass('main-header--filled');
-      }
-    });
+    $(window).on('scroll', handleScrollHomepage);
   }
 
   new WOW({
     offset: 100
   }).init();
 
-  $('.portfolio__list').imagesLoaded( function() {
+  $('.portfolio__list').imagesLoaded(function () {
     $('.js-portfolio-grid').isotope({
       itemSelector: '.portfolio__item',
       layoutMode: 'masonry',
