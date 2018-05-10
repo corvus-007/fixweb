@@ -1,0 +1,25 @@
+.block1 {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.block1__inner {
+
+}
+
+.block1__contents {
+  text-align: center;
+  font-size: 16px;
+
+  & > p {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.block1__button {
+  @include --button-white();
+}

@@ -1,0 +1,27 @@
+.main-nav {
+}
+
+.main-nav__list {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+
+  }
+
+  a {
+    display: block;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: $duration * 1.5;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}

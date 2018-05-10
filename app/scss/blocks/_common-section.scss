@@ -1,0 +1,38 @@
+.common-section {
+  padding-top: ($gutter * 2);
+  padding-bottom: ($gutter * 2);
+}
+
+.common-section__header {
+  margin-bottom: 45px;
+}
+
+.common-section__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: ($gutter / 3);
+  // padding-bottom: ($gutter / 2);
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  // color: $primary-color;
+
+  &::before {
+    // content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 40px;
+    margin: auto;
+    border-top: 2px solid $accent-color;
+  }
+}
+
+.common-section__intro {
+  font-weight: 500;
+  font-size: 19px;
+  text-align: center;
+}

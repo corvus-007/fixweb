@@ -1,0 +1,78 @@
+.project {
+  padding-bottom: $gutter;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.project__area-items {
+  @include mq-min(1024px) {
+    display: flex;
+  }
+}
+
+.project__images {
+  img {
+    margin-bottom: 20px;
+  }
+
+  @include mq-min(1024px) {
+    width: 50%;
+    flex-shrink: 0;
+    margin-right: $gutter;
+  }
+
+  @include mq-min(1280px) {
+    width: 55%;
+  }
+}
+
+.project__content {
+
+}
+
+.project__title {
+  margin: 0;
+  margin-bottom: $gutter * 2;
+  line-height: 1.2;
+}
+
+.project__text {
+  @include clear-mr-edges-elem();
+
+  margin-bottom: $gutter * 2;
+}
+
+.project__info {
+  table-layout: fixed;
+  margin-bottom: $gutter * 2;
+  font-size: 16px;
+
+
+  th {
+    padding-right: $gutter;
+  }
+
+  td {
+
+  }
+}
+
+.project__price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.project__price {
+  margin-right: $gutter;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.project__price-currency {
+  font-weight: 400;
+  font-size: 0.65em;
+}
+
+.project__add-to-cart {
+
+}

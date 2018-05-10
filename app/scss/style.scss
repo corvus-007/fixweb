@@ -1,0 +1,46 @@
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "mixins-containers";
+
+// @import "normalize.css";
+
+// Global
+@import "global/fonts";
+// @import "global/grid";
+@import "global/base";
+@import "global/layout";
+
+// Vendors
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
+@import "../../node_modules/owl.carousel/src/scss/owl.carousel";
+// @import "../../node_modules/animate.css/animate.min";
+@import "../../node_modules/animate.css/source/fading_entrances/fadeIn";
+// Blocks
+@import "blocks/button";
+@import "blocks/form";
+@import "blocks/table";
+@import "blocks/popup";
+@import "blocks/common-section";
+@import "blocks/custom-ol";
+@import "blocks/custom-ul";
+@import "blocks/main-header";
+@import "blocks/main-nav";
+@import "blocks/out-cover-toggler";
+@import "blocks/header-jumbotron";
+@import "blocks/hamburger-menu";
+@import "blocks/index-slider";
+@import "blocks/portfolio";
+@import "blocks/block1";
+@import "blocks/block2";
+@import "blocks/clients";
+@import "blocks/clients-slider";
+@import "blocks/testimonials";
+@import "blocks/testimonials-tabs";
+@import "blocks/page";
+@import "blocks/project";
+@import "blocks/archive-events";
+@import "blocks/main-footer";
+@import "blocks/socials";
+@import "blocks/out-cover";
+@import "blocks/out-cover-nav";

@@ -1,0 +1,111 @@
+.header-jumbotron {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: $gutter * 2;
+  background-color: #000000;
+  background: url("images/am.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000;
+    opacity: 0.8;
+  }
+
+  @media (min-height: 700px) {
+    min-height: 500px;
+    height: 85vh;
+  }
+
+  @media (orientation: portrait) and (min-height: 1024px) {
+    height: 75vh;
+  }
+}
+
+.header-jumbotron__inner {
+  position: relative;
+  z-index: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-jumbotron__title {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: $gutter / 3;
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffffff;
+
+  @include mq-max(1023px) {
+    margin-bottom: $gutter;
+    text-align: center;
+  }
+
+  @include mq-min(568px) {
+    font-size: 23px;
+  }
+
+  @include mq-min(667px) {
+    font-size: 26px;
+  }
+}
+
+.header-jumbotron__slogan {
+  display: block;
+  margin: 0;
+  margin-bottom: $gutter;
+  font-weight: 500;
+  font-size: 37px;
+  line-height: 1;
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  @include mq-max(1023px) {
+    text-align: center;
+  }
+
+  @include mq-min(480px) {
+    font-size: 50px;
+  }
+
+  @include mq-min(667px) {
+    font-size: 70px;
+  }
+
+  @include mq-min(992px) {
+    font-size: 100px;
+  }
+}
+
+.header-jumbotron__advantages {
+  max-width: 900px;
+  margin-bottom: 0;
+  font-size: 17px;
+  color: #ffffff;
+
+  li {
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq-min(480px) {
+
+  }
+}

@@ -1,0 +1,14 @@
+.block2 {
+  background-color: #fac23b;
+}
+
+.block2__inner {
+
+}
+
+.block2__contents {
+  @include clear-mr-edges-elem();
+
+  text-align: center;
+  font-size: 22px;
+}

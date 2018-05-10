@@ -1,0 +1,12 @@
+.main-footer {
+  padding-top: $gutter;
+  padding-bottom: $gutter;
+  color: #bfbfbf;
+  background-color: #010101;
+}
+
+.main-footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
