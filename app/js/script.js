@@ -53,11 +53,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  $('.js-testimonials-tabs').tabslet();
-
   if (window.matchMedia("(min-width: 1024px)").matches) {
     $('.js-testimonials-tabs').tabslet({
       mouseevent: 'hover',
     });
+  } else {
+    $('.js-testimonials-tabs').tabslet();
   }
 });
